@@ -9,6 +9,7 @@
   <script type="text/javascript" charset="utf-8" src="jquery-1.6.4.js"></script>
         
   <script type="text/javascript" charset="utf-8">
+  alert("1");
   var g_socketid = -1;
   
 window.addEventListener('load', function () {
@@ -21,6 +22,7 @@ window.addEventListener('load', function () {
 }, false);
 
 function enableBT() {
+	alert("Activando...");
 	window.plugins.BluetoothPlugin.enable( function() {
 		alert( 'Enabling successfull' );
 	}, function(error) {
